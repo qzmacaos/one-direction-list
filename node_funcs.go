@@ -2,12 +2,12 @@ package one_direction_list
 
 import "fmt"
 
-//Print -
+//Print - Распечатывает содержимое элемента списка
 func (node Node) Print()  {
 	fmt.Println(node.Name)
 }
 
-//PrintRecoursive -
+//PrintRecoursive - Распечатывает все элементы списка начиная с указанного
 func PrintRecoursive(node *Node){
 	if node != nil{
 		node.Print()

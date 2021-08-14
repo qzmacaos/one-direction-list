@@ -1,13 +1,13 @@
 package one_direction_list
 
-//New -
+//New - Cоздает новый список
 func New(name string) OneDirectionList{
 	return  OneDirectionList{
 		Root: &Node{Name: name},
 	}
 }
 
-//Add -
+//Add - Добавляет новый элемент после указанного(если не указан то после первого)
 func (odl OneDirectionList) Add(name string, afterNode *Node)  *Node{
 
 	newNode := &Node{Name: name}
@@ -22,7 +22,7 @@ func (odl OneDirectionList) Add(name string, afterNode *Node)  *Node{
 	return newNode
 }
 
-//Print -
+//Print - Распечатывает весь список
 func (odl OneDirectionList) Print(){
 	PrintRecoursive(odl.Root)
 }
